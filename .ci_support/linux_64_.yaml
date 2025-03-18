@@ -1,0 +1,11 @@
+cdt_name:
+- conda
+channel_sources:
+- conda-forge
+- metatensor
+channel_targets:
+- metatensor main
+docker_image:
+- quay.io/condaforge/linux-anvil-x86_64:alma9
+python_min:
+- '3.9'
