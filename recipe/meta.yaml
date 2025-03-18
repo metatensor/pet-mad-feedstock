@@ -1,0 +1,53 @@
+{% set name = "pet-mad" %}
+{% set version = "1.0" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  git_url: https://github.com/lab-cosmo/pet-mad.git
+
+
+build:
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 0
+
+requirements:
+  host:
+    - python {{ python_min }}
+    - setuptools >=68
+    - setuptools-scm >=8
+    - wheel
+    - pip
+  run:
+    - python >={{ python_min }}
+    - metatrain
+    - pet-neighbors-convert
+    - pytorch_geometric
+    - matscipy
+    - scikit-learn
+    - pathos
+    - scipy
+    - huggingface_hub
+
+test:
+  imports:
+    - pet_mad
+  commands:
+    - pip check
+  requires:
+    - python {{ python_min }}
+    - pip
+
+about:
+  home: https://github.com/lab-cosmo/pet-mad
+  summary: PET-MAD, a Universal Interatomic Potential for Advanced Materials Modeling
+  license: BSD-3-Clause
+  license_file: LICENSE
+  doc_url: https://github.com/lab-cosmo/pet-mad
+
+extra:
+  recipe-maintainers:
+    - abmazitov
