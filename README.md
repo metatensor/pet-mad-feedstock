@@ -1,7 +1,7 @@
 About pet-mad-feedstock
 =======================
 
-Feedstock license: [BSD-3-Clause](https://github.com/abmazitov/pet-mad-feedstock/blob/main/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/metatensor/pet-mad-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/lab-cosmo/pet-mad
 
@@ -90,7 +90,7 @@ opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `metatensor` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `metatensor` channel.
-Note that all branches in the abmazitov/pet-mad-feedstock are
+Note that all branches in the metatensor/pet-mad-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
@@ -105,5 +105,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@Luthaf](https://github.com/Luthaf/)
 * [@abmazitov](https://github.com/abmazitov/)
 
