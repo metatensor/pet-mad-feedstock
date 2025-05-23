@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pet_mad-{{ version }}.tar.gz
-  sha256: 84d5d0b09ebb9c4c382e61b70617db1bc863b00cb8864d50db347817265bd08c
+  sha256: 1aa3ea84cd0fc9f631afea8709f3506d8f47006ecc859d58404fc36b07a4e973
 
 build:
   noarch: python
