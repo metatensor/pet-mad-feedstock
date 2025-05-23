@@ -25,6 +25,7 @@ requirements:
     - python >={{ python_min }}
     - metatrain==2025.6
     - huggingface_hub
+    - platformdirs
 
 test:
   imports:
