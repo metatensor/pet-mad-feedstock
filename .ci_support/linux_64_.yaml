@@ -1,8 +1,8 @@
 cdt_name:
 - conda
 channel_sources:
-- metatensor
 - conda-forge
+- metatensor
 channel_targets:
 - metatensor main
 docker_image:
