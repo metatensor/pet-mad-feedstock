@@ -1,5 +1,5 @@
 {% set name = "pet-mad" %}
-{% set version = "1.4.3" %}
+{% set version = "1.4.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pet_mad-{{ version }}.tar.gz
-  sha256: f83d950ab5633deb750e8ff75d87655fd1037247a9a6abf0d81d10148c17f4cc
+  sha256: 9ed53079cbb1d072f9eecd3f6dfb9e3404339e5948b4d4605f5c4449ff500360
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - metatrain==2025.10
+    - metatrain==2025.12
     - huggingface_hub
     - platformdirs
 
